@@ -1,0 +1,76 @@
+.inicio-sobre {
+    min-height: 100%;
+    display: flex;
+    padding-top: 89px;
+    
+}
+
+.inicio-sobre .fundo {
+    background: url(../img/pessoasConversando.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 190px 0 125px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.inicio-sobre .fundo::after{
+    content: '';
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.8239670868347339) 2%, rgba(239,239,245,0) 50%, rgba(0,0,0,0.7959558823529411) 94%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.inicio-sobre .fundo .info{
+    padding: 0 10%;
+}
+
+.inicio-sobre .fundo .info .titulo {
+    font-size: 5rem;
+    color: var(--cor-de-destaque-site);
+    margin-bottom: 20px;
+}
+
+.inicio-sobre .fundo .info .paragrafo {
+    font-size: 2.2rem;
+    color: var(--cor-padrao);
+    margin-bottom: 15px;
+    max-width: 760px;
+}
+
+@media(max-width:1160px){
+    .inicio-sobre .fundo .info .titulo {
+        font-size: 3.5rem;
+    }
+    
+    .inicio-sobre .fundo .info .paragrafo {
+        font-size: 1.7rem;   
+    }
+}
+
+@media(max-width:900px){
+    .inicio-sobre .fundo .info{
+        text-align: center;
+    }
+    .inicio-sobre .fundo{
+        padding: 130px 0 60px;
+    }
+}
+
+@media(max-width:540px){
+    .inicio-sobre .fundo .info .titulo {
+        font-size: 3rem;
+    }
+    
+    .inicio-sobre .fundo .info .paragrafo {
+        font-size: 1.4rem;
+    }
+}
